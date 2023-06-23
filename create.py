@@ -32,12 +32,7 @@ testimonial = slide_4.placeholders[1]
 title.text = "Testimonial"
 testimonial.text = "'Rahul's expertise in AI/ML transformed our business. Highly recommended!' - satisfied client"
 
-# Slide 5: Contact Slide
-slide_5 = presentation.slides.add_slide(presentation.slide_layouts[1])
-title = slide_5.shapes.title
-contact = slide_5.placeholders[1]
-title.text = "Contact Information"
-contact.text = "Rahul Adidravid\nAI/ML Engineer\nEmail: [Your email address]\nWebsite: [Your website URL]"
+
 
 # Save the presentation
 presentation.save("AI_ML_Engineer_Gig.pptx")
