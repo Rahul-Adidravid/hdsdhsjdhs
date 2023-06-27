@@ -19,12 +19,6 @@ title.text = "Visual Representation"
 visuals.text = "Include graphics depicting neural networks, data patterns, and machine learning algorithms."
 
 
-# Slide 4: Testimonial Slide
-slide_4 = presentation.slides.add_slide(presentation.slide_layouts[1])
-title = slide_4.shapes.title
-testimonial = slide_4.placeholders[1]
-title.text = "Testimonial"
-testimonial.text = "'Rahul's expertise in AI/ML transformed our business. Highly recommended!' - satisfied client"
 
 
 
