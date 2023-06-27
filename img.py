@@ -6,9 +6,7 @@ port = 22
 username = 'your_username'
 password = 'your_password'
 
-try:
-    # Create SSH client
-    client = paramiko.SSHClient()
+
 
     # Automatically add the server's host key (not recommended for production)
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
