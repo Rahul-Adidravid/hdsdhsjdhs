@@ -18,12 +18,6 @@ visuals = slide_2.placeholders[1]
 title.text = "Visual Representation"
 visuals.text = "Include graphics depicting neural networks, data patterns, and machine learning algorithms."
 
-# Slide 3: Showcase Results Slide
-slide_3 = presentation.slides.add_slide(presentation.slide_layouts[1])
-title = slide_3.shapes.title
-results = slide_3.placeholders[1]
-title.text = "Showcase Results"
-results.text = "- Delivered accurate object detection for 100+ clients\n- Improved accuracy by 20% with custom ML models"
 
 # Slide 4: Testimonial Slide
 slide_4 = presentation.slides.add_slide(presentation.slide_layouts[1])
