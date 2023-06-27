@@ -19,9 +19,6 @@ try:
     # Perform operations on the server
     # For example, you can execute commands using client.exec_command('command')
 
-    # Disconnect from the server
-    client.close()
-
     print("Connected successfully!")
 except paramiko.AuthenticationException:
     print("Authentication failed. Please check your credentials.")
