@@ -14,8 +14,5 @@ image = transform(image)
 # Perform inference
 results = model([image])
 
-# Extract bounding box information
-boxes = results.xyxy[0]  # Get the bounding boxes
-scores = results.names[0]  # Get the class names
-confidence = results.xyxys[0][:, 4]  # Get the confidence scores
+
 
