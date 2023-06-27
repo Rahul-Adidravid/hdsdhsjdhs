@@ -12,7 +12,7 @@ transform = T.Compose([T.ToTensor()])
 image = transform(image)
 
 # Perform inference
-results = model([image])
+results = model([])
 
 
 
