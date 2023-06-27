@@ -8,8 +8,7 @@ password = 'your_password'
 
 
 
-    # Automatically add the server's host key (not recommended for production)
-    client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    # Automatical
 
     # Connect to the server
     client.connect(hostname, port, username, password)
