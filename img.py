@@ -19,8 +19,3 @@ boxes = results.xyxy[0]  # Get the bounding boxes
 scores = results.names[0]  # Get the class names
 confidence = results.xyxys[0][:, 4]  # Get the confidence scores
 
-# Iterate over the bounding boxes and display the results
-for box, score, conf in zip(boxes, scores, confidence):
-    x1, y1, x2, y2 = box.tolist()
-    label = f'{score} {conf:.2f}'
-    print(f'Label: {label}, Coordinates: ({x1:.1f}, {y1:.1f})-({x2:.1f}, {y2:.1f})')
