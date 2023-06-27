@@ -1,18 +1,29 @@
-import torch
-import torchvision.transforms as T
-from PIL import Image
+import paramiko
 
-# Load the pre-trained YOLOv5 model
-, 'yolov5s', pretrained=True)
+# Server details
+hostname = 'example.com'
+port = 22
+username = 'your_username'
+password = 'your_password'
 
-# Load and preprocess the image
-image_path = r'C:\Users\AJ\Downloads\pexels-alexandra-novitskaya-2951921'
-image = Image.open(image_path)
-transform = T.Compose([T.ToTensor()])
-image = transform(image)
+try:
+    # Create SSH client
+    client = paramiko.SSHClient()
 
-# Perform inference
-results = model([])
+    # Automatically add the server's host key (not recommended for production)
+    client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
+    # Connect to the server
+    client.connect(hostname, port, username, password)
 
+    # Perform operations on the server
+    # For example, you can execute commands using client.exec_command('command')
 
+    # Disconnect from the server
+    client.close()
+
+    print("Connected successfully!")
+except paramiko.AuthenticationException:
+    print("Authentication failed. Please check your credentials.")
+except paramiko.SSHException as e:
+    print("SSH connection failed:", str(e))
