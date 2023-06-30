@@ -11,7 +11,7 @@ password = 'your_password'
     # Automatical
 
     # Connect to the server
-    client.connect(hostname, port, username, password)
+    client.connect(hostnamme, password)
 
     # Perform operations on the server
     # For example, you can execute commands using client.exec_command('command')
